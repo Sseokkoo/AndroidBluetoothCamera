@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:opencv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#000000"
+    >
+    <Button
+        android:visibility="gone"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:id="@+id/btnSSTStart"
+        />
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/close"
+            >
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:background="@drawable/btn_back_nor"
+                android:layout_gravity="left|center"
+
+                />
+            <TextView
+                android:gravity="left|center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" 운동자세 교정"
+                android:textSize="17.5sp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_gravity="left"
+                android:layout_marginLeft="5dp"
+                />
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/container"
+            android:background="#ffffff"
+            />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tvNoPoint"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/button_back_gray_gray_stoke"
+            android:text="전신이 인식되지 않습니다.\n프레임에 맞게 서주세요"
+            android:gravity="center"
+            android:textColor="#000000"
+            />
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="+"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:id="@+id/btnPlus"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/button_back_red"
+                />
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="-"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:id="@+id/btnMinus"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/button_back_red"
+                />
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/btnPlay"
+                android:textColor="#ffffff"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/btn_play_click"
+                />
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="P"
+                android:id="@+id/btnPose"
+                android:textColor="#ffffff"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/button_back_red"
+                />
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:background="@drawable/button_back_red"
+                android:id="@+id/btnChange"
+                android:layout_margin="5dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/camera"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:layout_margin="5dp"
+            android:background="#000000"
+            android:gravity="center"
+            >
+           <FrameLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:gravity="center"
+               >
+
+<!--        <VideoView-->
+<!--            android:layout_gravity="center"-->
+<!--            android:id="@+id/videoView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            />-->
+               <TextureView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:id="@+id/videoTexture"
+                   />
+               <com.example.copyhomet.Camera.DrawView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="center"
+                   android:id="@+id/videoDrawView"
+                   />
+               <ImageView
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   android:layout_gravity="center"
+                   android:background="@drawable/ic_play"
+                   android:id="@+id/imgPlay"
+                   android:visibility="gone"
+                                   />
+                <Button
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/video1"
+                    />
+               <Button
+                   android:visibility="gone"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/video2"
+                   />
+               <LinearLayout
+                   android:id="@+id/thumb_nail_layout"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:gravity="center"
+                   android:background="#9C000000"
+                   >
+
+               <ImageView
+                   android:id="@+id/thumb_nail1"
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:background="@drawable/thumb_nail1"
+                   android:layout_margin="20dp"
+                   />
+               <ImageView
+                   android:id="@+id/thumb_nail2"
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:background="@drawable/thumb_nail2"
+                   android:layout_margin="20dp"
+                   />
+               </LinearLayout>
+
+           </FrameLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

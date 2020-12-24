@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:background="@drawable/button_back_gray_stroke"
+    android:layout_gravity="center"
+    android:layout_marginBottom="15dp"
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="년도 선택"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:layout_marginTop="15dp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <NumberPicker
+            android:id="@+id/picker_year"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:theme="@style/numberPickerCustomSize"
+            >
+        </NumberPicker>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+
+        <Button
+            android:id="@+id/btnSelectYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="선택"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_back_red"
+            android:layout_marginBottom="15dp"
+            />
+
+
+
+    </LinearLayout>
+</LinearLayout>

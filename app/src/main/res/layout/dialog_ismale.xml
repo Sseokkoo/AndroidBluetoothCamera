@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="250dp"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="성별"
+        android:gravity="center"
+        android:textColor="#000000"
+        />
+
+    <LinearLayout
+        android:paddingTop="15dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+    <CheckBox
+        android:id="@+id/chkMale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="남자"
+        android:button="@drawable/bg_round_checkbox"
+        android:layout_marginRight="15dp"
+        />
+    <CheckBox
+        android:id="@+id/chkFemale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="여자"
+        android:button="@drawable/bg_round_checkbox"
+
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/Insert"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_insert_click"
+            />
+        <Button
+            android:layout_marginTop="5dp"
+            android:id="@+id/Cancel"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_cancel_click"
+            />
+    </LinearLayout>
+
+</LinearLayout>

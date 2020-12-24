@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/button_back_gray_stroke">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="시작 날짜와 마지막 날짜를 선택해주세요."
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        />
+
+    <com.applikeysolutions.cosmocalendar.view.CalendarView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/calendar_view"
+        />
+    <Button
+        android:id="@+id/Select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        android:background="@drawable/button_back_red"
+        android:layout_margin="15dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>

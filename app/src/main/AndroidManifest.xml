@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.copyhomet">
+
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+<!--    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>-->
+<!--28 api 이상 부터는 서비스가 백그라운드로 넘어오면서 블루투스 연결하자마자 팅김-->
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_homet_user"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_homet_user_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme"
+        android:largeHeap="true"
+        android:allowClearUserData="true"
+        android:hardwareAccelerated="true"
+        >
+        <activity android:name=".Main.LoadingActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Main.MainTestActivity"/>
+
+        <activity android:name=".TotalActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SignInActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Main.MainActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".ModeDialog"
+            android:theme="@style/Theme.MyDialog"/>
+        <activity android:name=".DialogExTimeSet"
+            android:theme="@style/Theme.MyDialog2"/>
+
+        <activity android:name=".Main.LoginActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".SignDialog.DialogHeight"
+            android:theme="@style/Theme.MyDialog"/>
+        <activity android:name=".SignDialog.DialogBirth"
+            android:theme="@style/Theme.MyDialog"/>
+        <activity android:name=".SignDialog.DialogIsMale"
+            android:theme="@style/Theme.MyDialog"/>
+        <activity android:name=".SignDialog.DialogNickname"
+            android:theme="@style/Theme.MyDialog"/>
+        <activity android:name=".SignDialog.DialogWeight"
+            android:theme="@style/Theme.MyDialog"/>
+
+        <activity android:name=".Main.DialogGender"
+            android:theme="@style/Theme.MyDialog"/>
+
+        <activity android:name=".Bluetooth.BleConnectionActivity"/>
+        <activity android:name=".Bluetooth.DialogBle"
+            android:theme="@style/Theme.MyDialog"/>
+        <activity android:name=".Bluetooth.DialogBleToMain"
+            android:theme="@style/Theme.MyDialog"/>
+        <activity android:name=".Bluetooth.DialogBleNext"/>
+        <activity android:name=".Main.DialogReset"
+            android:theme="@style/Theme.MyDialog"/>
+
+        <activity android:name=".Bluetooth.Bluetooth1.BLE.DialogDevice1Droped"
+            android:theme="@style/Theme.MyDialog2"/>
+        <activity android:name=".Bluetooth.Bluetooth2.BLE.DialogDevice2Droped"
+            android:theme="@style/Theme.MyDialog2"/>
+        <activity android:name=".Bluetooth.Bluetooth3.BLE.DialogDevice3Droped"
+            android:theme="@style/Theme.MyDialog2"/>
+        <activity android:name=".Bluetooth.Bluetooth4.BLE.DialogDevice4Droped"
+            android:theme="@style/Theme.MyDialog2"/>
+        <activity android:name=".Bluetooth.Bluetooth5.BLE.DialogDevice5Droped"
+            android:theme="@style/Theme.MyDialog2"/>
+
+
+        <activity android:name=".Bluetooth.Bluetooth1.Ble1Activity"
+            android:theme="@style/Theme.MyDialog2"/>
+        <activity android:name=".Bluetooth.Bluetooth2.Ble2Activity"
+            android:theme="@style/Theme.MyDialog2"/>
+        <activity android:name=".Bluetooth.Bluetooth3.Ble3Activity"
+            android:theme="@style/Theme.MyDialog2"/>
+        <activity android:name=".Bluetooth.Bluetooth4.Ble4Activity"
+            android:theme="@style/Theme.MyDialog2"/>
+        <activity android:name=".Bluetooth.Bluetooth5.Ble5Activity"
+            android:theme="@style/Theme.MyDialog2"/>
+
+
+        <activity android:name=".Graph.CalendarRange"
+            android:theme="@style/Theme.MyDialog2"/>
+        <activity android:name=".Graph.DialogSelectGraphValue"
+            android:theme="@style/Theme.MyDialog2"/>
+        <activity android:name=".Graph.DialogSelectYear"
+            android:theme="@style/Theme.MyDialog2"/>
+        <activity android:name=".Main.DialogMoreFunction"
+            android:theme="@style/Theme.MyDialog2"/>
+
+        <service android:name=".Bluetooth.Bluetooth1.UART.UARTService"/>
+        <service android:name=".Bluetooth.Bluetooth2.UART.UARTService2"/>
+        <service android:name=".Bluetooth.Bluetooth3.UART.UARTService3"/>
+        <service android:name=".Bluetooth.Bluetooth4.UART.UARTService4"/>
+        <service android:name=".Bluetooth.Bluetooth5.UART.UARTService5"/>
+
+        <service android:name=".ForecdTerminationService"
+            android:stopWithTask="false" />
+
+
+        <activity android:name=".Graph.GraphActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Camera.CameraActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".WatchingVideoActivity"/>
+
+        <activity android:name=".DialogSpeach"
+            android:theme="@style/Theme.MyDialog"/>
+
+        <activity android:name=".Main.MyPageActivity"/>
+
+        <activity android:name=".Main.CustomExActivity"/>
+
+        <activity android:name=".Main.DialogCustomExMode"
+            android:theme="@style/Theme.MyDialog2"/>
+
+
+    </application>
+
+</manifest>

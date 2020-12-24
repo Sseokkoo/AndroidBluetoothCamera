@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="250dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+<!--    <DatePicker-->
+<!--        android:theme="@style/numberPickerCustomSize"-->
+<!--        android:id="@+id/datePicker"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:datePickerMode="spinner"-->
+<!--        android:calendarViewShown="false"-->
+<!--        />-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="나이"
+        android:gravity="center"
+        android:textColor="#000000"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:paddingTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <EditText
+            android:id="@+id/edtAge"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="나이를 입력해주세요"
+            android:background="@drawable/underline_red"
+            android:gravity="left"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:maxLength="3"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="세"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/Insert"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_insert_click"
+            />
+        <Button
+            android:layout_marginTop="5dp"
+            android:id="@+id/Cancel"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_cancel_click"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

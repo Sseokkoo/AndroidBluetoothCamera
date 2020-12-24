@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="#000000"
+    android:gravity="center">
+
+
+    <LinearLayout
+
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:id="@+id/edtemail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:singleLine="true"
+            android:hint="E-mail"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="14.5sp"
+            android:background="@drawable/underline_white"
+            android:layout_marginBottom="20dp"
+            android:textCursorDrawable="@drawable/cursor_color"
+            />
+        <EditText
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/edtpassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="비밀번호"
+            android:inputType="textPassword"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="14.5sp"
+            android:background="@drawable/underline_white"
+            android:textCursorDrawable="@drawable/cursor_color"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginTop="30dp"
+            android:text="비밀번호 찾기"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/findPassword"
+            android:textColor="#FF0000"
+            android:textStyle="bold"
+            android:visibility="gone"
+            />
+        <Button
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="로그인"
+            android:background="@drawable/button_back_pinkred"
+            android:layout_marginTop="30dp"
+            android:textSize="17sp"
+            />
+        <Button
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/signin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="회원가입"
+            android:textColor="#C90049"
+            android:background="@drawable/button_back_white_red_stroke"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:textSize="17sp"
+            />
+<!--        <Button-->
+<!--            android:layout_marginLeft="30dp"-->
+<!--            android:layout_marginRight="30dp"-->
+<!--            android:id="@+id/noSign"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Guest로 로그인"-->
+
+<!--            android:textColor="#5D5D5D"-->
+<!--            android:background="#00000000"-->
+<!--            />-->
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+
+
+
+

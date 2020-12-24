@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/ExMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="운동 모드"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="운동 시간 설정"
+        android:textColor="#000000"
+        android:textSize="14dp"
+        android:layout_marginLeft="15dp"
+        />
+    <TextView
+        android:id="@+id/ExTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textColor="#000000"
+        android:layout_marginLeft="15dp"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Device1Layout"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="EMS HomeT (배)"
+            android:textColor="#000000"
+            />
+        <Button
+            android:id="@+id/minus1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text=" - "/>
+
+
+        <Button
+            android:id='@+id/plus1'
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text=" + "/>
+
+        <TextView
+            android:id="@+id/edtCount1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="50"
+            android:layout_marginLeft="30dp"
+            android:textColor="#000000"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Device2Layout"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="EMS HomeT (팔)"
+            android:textColor="#000000"/>
+        <Button
+            android:id="@+id/minus2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text=" - "/>
+
+
+        <Button
+            android:id='@+id/plus2'
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text=" + "/>
+        <TextView
+            android:id="@+id/edtCount2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="50"
+            android:layout_marginLeft="30dp"
+            android:textColor="#000000"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Device3Layout"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="EMS HomeT (팔2)"
+            android:textColor="#000000"
+            />
+        <Button
+            android:id="@+id/minus3"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text=" - "/>
+
+
+        <Button
+            android:id='@+id/plus3'
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text=" + "/>
+        <TextView
+            android:id="@+id/edtCount3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="50"
+            android:layout_marginLeft="30dp"
+            android:textColor="#000000"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Device4Layout"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="EMS HomeT (다리)"
+            android:textColor="#000000"
+            />
+        <Button
+            android:id="@+id/minus4"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text=" - "/>
+
+
+        <Button
+            android:id='@+id/plus4'
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text=" + "/>
+        <TextView
+            android:id="@+id/edtCount4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="50"
+            android:layout_marginLeft="30dp"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Device5Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="EMS HomeT (다리2)"
+            android:textColor="#000000"/>
+
+        <Button
+            android:id="@+id/minus5"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text=" - " />
+
+
+        <Button
+            android:id='@+id/plus5'
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text=" + " />
+
+        <TextView
+            android:id="@+id/edtCount5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:text="50"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+    <Button
+        android:id="@+id/minusAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" - " />
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" ▶|| "
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        />
+    <Button
+        android:id='@+id/plusAll'
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" + " />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/Datas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="운동기록관리"/>
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#bdbdbd"
+        android:textSize="14dp"
+        android:text="v0.0.3"/>
+</LinearLayout>

@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:background="#000000">
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        >-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="35dp"-->
+<!--            android:text="운동설정"-->
+<!--            android:textSize="17.5sp"-->
+<!--            android:textColor="#ffffff"-->
+<!--            android:textStyle="bold"-->
+<!--            />-->
+<!--    </LinearLayout>-->
+    <Button
+        android:visibility="gone"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:id="@+id/btnSSTStart"
+        />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/close"
+        >
+
+<!--        <TextView-->
+<!--            android:gravity="left|center"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="운동설정"-->
+<!--            android:textSize="17.5sp"-->
+<!--            android:textColor="#ffffff"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_gravity="left"-->
+<!--            android:layout_marginLeft="25dp"-->
+<!--            android:id="@+id/Tester"-->
+<!--            />-->
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/ic_menu"
+            android:id="@+id/btnMenu"
+            />
+
+
+        <TextView
+            android:gravity="right|center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="추가기능"
+            android:textSize="17.5sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_marginRight="25dp"
+            android:id="@+id/moreFunction"
+            />
+
+
+    </LinearLayout>
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <!--    <LinearLayout-->
+        <!--        android:id="@+id/InfoLayout"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:gravity="center"-->
+        <!--        android:orientation="horizontal"-->
+        <!--        app:layout_constraintTop_toTopOf="parent"-->
+        <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--        app:layout_constraintRight_toRightOf="parent"-->
+        <!--        app:layout_constraintBottom_toTopOf="@+id/ControlLayout"-->
+        <!--        app:layout_constraintVertical_chainStyle="packed"-->
+        <!--        app:layout_constraintVertical_bias="0.1"-->
+        <!--        >-->
+
+
+        <!--    </LinearLayout>-->
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <Button
+                    android:id="@+id/btnInitAll"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/button_back_white_red_stroke_corner"
+                    android:text="리셋"
+                    android:textSize="13sp"
+                    android:textColor="#000000"
+                    android:layout_marginRight="5dp"
+                    app:layout_constraintBottom_toBottomOf="@id/ExMode"
+                    app:layout_constraintLeft_toLeftOf="@id/TimeLayout"
+                    app:layout_constraintRight_toLeftOf="@id/ExMode"
+                    app:layout_constraintTop_toTopOf="@id/ExMode" />
+
+
+                <Button
+                    android:id="@+id/ExMode"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/button_back_white_red_stroke_corner"
+                    android:text="운동모드설정"
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toTopOf="@id/TimeLayout"
+                    app:layout_constraintLeft_toRightOf="@+id/btnInitAll"
+                    app:layout_constraintRight_toLeftOf="@+id/Datas"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0"
+                    android:layout_marginBottom="15dp"
+                    app:layout_constraintVertical_chainStyle="packed"
+                    android:layout_marginTop="30dp"
+                    />
+                <Button
+                    android:id="@+id/Datas"
+                    android:layout_width="0dp"
+                    android:text="운동기록관리"
+                    android:textSize="13sp"
+                    app:layout_constraintTop_toTopOf="@+id/ExMode"
+                    app:layout_constraintBottom_toBottomOf="@id/ExMode"
+                    app:layout_constraintRight_toRightOf="@+id/TimeLayout"
+                    app:layout_constraintLeft_toRightOf="@+id/ExMode"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/button_back_white_red_stroke_corner"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/TimeLayout"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toTopOf="@+id/Progress_Ex"
+                    app:layout_constraintLeft_toLeftOf="@id/minusAll"
+                    app:layout_constraintTop_toBottomOf="@id/ExMode"
+                    app:layout_constraintVertical_bias="0"
+                    app:layout_constraintRight_toRightOf="@id/plusAll"
+                    android:background="@drawable/button_back_white_red_stroke_corner"
+                    app:layout_constraintVertical_chainStyle="packed"
+                    android:layout_marginTop="15dp"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="65dp"
+                        android:paddingRight="65dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="운동 시간 설정하기"
+                            android:textColor="#000000"
+                            android:textSize="14dp"
+                            />
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:id="@+id/ExTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="21:00"
+                            android:textSize="18dp"
+                            android:textColor="#000000"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+
+                <Button
+                    android:id="@+id/play"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/btn_play_click"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/TimeLayout"
+                    app:layout_constraintVertical_bias="0"
+                    app:layout_constraintBottom_toTopOf="@id/linear"
+                    />
+
+                <Button
+                    android:layout_marginRight="30dp"
+                    android:id="@+id/plusAll"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/btn_plus_click"
+                    app:layout_constraintBottom_toBottomOf="@id/play"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/play"
+                    app:layout_constraintTop_toTopOf="@id/play" />
+
+
+                <Button
+                    android:layout_marginLeft="30dp"
+                    android:id='@+id/minusAll'
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_minus_click"
+                    app:layout_constraintBottom_toBottomOf="@id/play"
+                    app:layout_constraintRight_toLeftOf="@id/play"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/play" />
+
+
+
+
+                <TextView
+                    android:id="@+id/tvEmptyDevice"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:text="연결된 기기가 없습니다"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    app:layout_constraintTop_toBottomOf="@id/play"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:background="#000000"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/play"
+                    app:layout_constraintVertical_bias="0"
+                    android:id="@+id/linear"
+                    >
+                    <!--팔-->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/Constraint1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        >
+
+                        <ImageView
+                            android:id="@+id/image_belly"
+                            android:layout_width="65dp"
+                            android:layout_height="120dp"
+                            android:layout_marginLeft="30dp"
+                            android:background="@drawable/belly"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+
+                            />
+
+                        <Button
+                            android:id="@+id/minus1"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_minus_click"
+                            app:layout_constraintBottom_toBottomOf="@+id/image_belly"
+                            app:layout_constraintHorizontal_chainStyle="spread"
+                            app:layout_constraintLeft_toRightOf="@+id/image_belly"
+                            app:layout_constraintRight_toLeftOf="@id/edtCount1"
+                            app:layout_constraintTop_toTopOf="@+id/image_belly" />
+
+                        <TextView
+                            android:id="@+id/edtCount1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textSize="25sp"
+                            android:textColor="#ffffff"
+                            app:layout_constraintBottom_toBottomOf="@+id/minus1"
+                            app:layout_constraintHorizontal_chainStyle="spread"
+                            app:layout_constraintLeft_toRightOf="@id/minus1"
+                            app:layout_constraintRight_toLeftOf="@+id/plus1"
+                            app:layout_constraintTop_toTopOf="@id/minus1" />
+
+                        <Button
+                            android:id="@+id/plus1"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_plus2_click"
+                            app:layout_constraintBottom_toBottomOf="@+id/edtCount1"
+                            app:layout_constraintLeft_toRightOf="@+id/edtCount1"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/edtCount1" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <!--복근-->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:visibility="visible"
+                        android:id="@+id/Constraint2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        >
+
+                        <ImageView
+                            android:id="@+id/image_arm"
+                            android:layout_width="65dp"
+                            android:layout_height="120dp"
+                            android:layout_marginLeft="30dp"
+                            android:background="@drawable/arm"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+
+                            />
+
+                        <Button
+                            android:id="@+id/minus2"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_minus_click"
+                            app:layout_constraintBottom_toBottomOf="@+id/image_arm"
+                            app:layout_constraintHorizontal_chainStyle="spread"
+                            app:layout_constraintLeft_toRightOf="@+id/image_arm"
+                            app:layout_constraintRight_toLeftOf="@id/edtCount2"
+                            app:layout_constraintTop_toTopOf="@+id/image_arm" />
+
+                        <TextView
+                            android:id="@+id/edtCount2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textSize="25sp"
+                            android:textColor="#ffffff"
+                            app:layout_constraintBottom_toBottomOf="@+id/minus2"
+                            app:layout_constraintHorizontal_chainStyle="spread"
+                            app:layout_constraintLeft_toRightOf="@id/minus2"
+                            app:layout_constraintRight_toLeftOf="@+id/plus2"
+                            app:layout_constraintTop_toTopOf="@id/minus2" />
+
+                        <Button
+                            android:id="@+id/plus2"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_plus2_click"
+                            app:layout_constraintBottom_toBottomOf="@+id/edtCount2"
+                            app:layout_constraintLeft_toRightOf="@+id/edtCount2"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/edtCount2" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <!--다리-->
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/Constraint4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            android:id="@+id/image_leg"
+                            android:layout_width="65dp"
+                            android:layout_height="120dp"
+                            android:layout_marginLeft="30dp"
+                            android:background="@drawable/leg"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <Button
+                            android:id="@+id/minus4"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_minus_click"
+                            app:layout_constraintBottom_toBottomOf="@+id/image_leg"
+                            app:layout_constraintHorizontal_chainStyle="spread"
+                            app:layout_constraintLeft_toRightOf="@+id/image_leg"
+                            app:layout_constraintRight_toLeftOf="@id/edtCount4"
+                            app:layout_constraintTop_toTopOf="@+id/image_leg" />
+
+                        <TextView
+                            android:id="@+id/edtCount4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textSize="25sp"
+                            android:textColor="#ffffff"
+                            app:layout_constraintBottom_toBottomOf="@+id/minus4"
+                            app:layout_constraintHorizontal_chainStyle="spread"
+                            app:layout_constraintLeft_toRightOf="@id/minus4"
+                            app:layout_constraintRight_toLeftOf="@+id/plus4"
+                            app:layout_constraintTop_toTopOf="@id/minus4" />
+
+                        <Button
+                            android:id="@+id/plus4"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_plus2_click"
+                            android:text=""
+                            app:layout_constraintBottom_toBottomOf="@+id/edtCount4"
+                            app:layout_constraintLeft_toRightOf="@+id/edtCount4"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/edtCount4" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="v0.2.6"
+                    android:textColor="#ffffff"
+                    android:textSize="14dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/linear"
+                    android:layout_marginTop="30dp"
+                    app:layout_constraintVertical_bias="0"
+                    android:id="@+id/tester"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <include layout="@layout/activity_drawer" />
+</androidx.drawerlayout.widget.DrawerLayout>

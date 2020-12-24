@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/close"
+        >
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_back_nor"
+            android:layout_gravity="left|center"
+
+            />
+    <TextView
+        android:gravity="left|center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" 운동기록 관리"
+        android:textSize="17.5sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_gravity="left"
+        android:layout_marginLeft="5dp"
+        />
+    </LinearLayout>
+
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mcv_showOtherDates="defaults"
+        android:id="@+id/main_my_page_calendar"
+        android:background="@drawable/button_back_white"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        >
+        <TextView
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:background="@drawable/button_back_white_red_noncorner"
+            android:textColor="#ffffff"
+            android:text="날짜"
+            android:gravity="center"
+            />
+        <TextView
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:background="@drawable/button_back_white_red_noncorner"
+            android:textColor="#ffffff"
+            android:text="Mode"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_back_white_red_noncorner"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="시작시간" />
+        <TextView
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:background="@drawable/button_back_white_red_noncorner"
+            android:textColor="#ffffff"
+            android:text="운동시간"
+            android:gravity="center"
+            />
+        <TextView
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:background="@drawable/button_back_white_red_noncorner"
+            android:textColor="#ffffff"
+            android:text="사용 부위"
+            android:gravity="center"
+            />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerView"
+        android:background="#ffffff"
+        />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="선택 날짜의 운동 기록이 없습니다."
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="#000000"
+            android:id="@+id/emptyData"
+            android:background="#ffffff"
+            />
+    </FrameLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/button_back_red"
+        android:text="그래프 보기"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:id="@+id/ShowGraph"
+        />
+
+</LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

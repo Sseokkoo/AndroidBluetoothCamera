@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<!--        비디오 선택-->
+    <LinearLayout
+        android:id="@+id/SelectVideoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/close"
+            >
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:background="@drawable/btn_back_nor"
+                android:layout_gravity="left|center"
+
+                />
+            <TextView
+                android:gravity="left|center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" 운동 동영상"
+                android:textSize="17.5sp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_gravity="left"
+                android:layout_marginLeft="5dp"
+                />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/thumb_nail1"
+            android:id="@+id/thumb_nail1"
+            android:layout_marginRight="30dp"
+            />
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/thumb_nail2"
+            android:id="@+id/thumb_nail2"
+            />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <Button
+                android:layout_marginRight="30dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/ExButton"
+                android:text="종합운동"
+                android:textSize="30dp"
+                android:background="@drawable/button_back_red"
+                android:textColor="#ffffff"
+                />
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+<!--        비디오 재생-->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/VideoViewLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            >
+            <VideoView
+                android:layout_gravity="center"
+                android:id="@+id/vv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,340 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:weightSum="6"
+    android:background="#000000">
+
+
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        >
+
+
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/edtname"-->
+        <!--            android:layout_width="fill_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:hint="닉네임"-->
+        <!--            android:singleLine="true"-->
+        <!--            />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/edtnickname"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="이름"-->
+<!--            android:singleLine="true"/>-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:text="회원 정보"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            />
+
+        <EditText
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/edtNickname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="닉네임"
+            android:background="@drawable/underline_white"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:layout_marginBottom="20dp"
+            android:singleLine="true"/>
+
+        <EditText
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/edtemail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-mail"
+            android:background="@drawable/underline_white"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:layout_marginBottom="20dp"
+            android:singleLine="true"/>
+
+
+        <EditText
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/PW"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="비밀번호(숫자 4자리)"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:background="@drawable/underline_white"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:layout_marginBottom="20dp"
+            />
+        <EditText
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/PWC"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="비밀번호 재입력"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:background="@drawable/underline_white"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:textCursorDrawable="@drawable/cursor_color"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="10dp"
+            android:text="운동 정보"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="17.5sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            >
+            <LinearLayout
+                android:id="@+id/isMaleLayout"
+                android:layout_width="95dp"
+                android:layout_height="35dp"
+                android:background="@drawable/button_back_white_red_stroke_corner"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/tvisMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="성별"
+                android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="15dp"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/heightLayout"
+                android:gravity="center"
+                android:layout_width="95dp"
+                android:layout_height="35dp"
+                android:background="@drawable/button_back_white_red_stroke_corner"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                >
+                <TextView
+                    android:id="@+id/tvheight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="키"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="15dp"
+                    android:textColor="#000000"
+                    android:maxLength="6"/>
+            </LinearLayout>
+<!--            <LinearLayout-->
+<!--                android:id='@+id/weightLayout'-->
+<!--                android:gravity="center"-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/button_back_stroke"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                >-->
+<!--                <TextView-->
+<!--                    android:id="@+id/tvweight"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="몸무게"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:layout_marginBottom="5dp"-->
+<!--                    android:textSize="15dp"-->
+<!--                    android:textColor="#000000"/>-->
+<!--            </LinearLayout>-->
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/nicknameLayout"
+                android:gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_back_stroke"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                >
+                <TextView
+                    android:id="@+id/tvnickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="닉네임"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="15dp"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/birthLayout"
+                android:gravity="center"
+                android:layout_width="95dp"
+                android:layout_height="35dp"
+                android:background="@drawable/button_back_white_red_stroke_corner"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                >
+                <TextView
+                    android:id="@+id/tvbirth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="나이"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="15dp"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id='@+id/weightLayout'
+                android:gravity="center"
+                android:layout_width="95dp"
+                android:layout_height="35dp"
+                android:background="@drawable/button_back_white_red_stroke_corner"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                >
+                <TextView
+                    android:id="@+id/tvweight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="몸무게"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="15dp"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+            // 인바디
+            <LinearLayout
+                android:id="@+id/inbodyLayout"
+                android:gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_back_stroke"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:id="@+id/tvinbody"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="인바디"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="15dp"
+                    android:textColor="#000000"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+        <Button
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+
+            android:id="@+id/signin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="회원가입"
+            android:textColor="#4d070f"
+            android:background="@drawable/button_back_white_red_stroke"
+            android:textSize="17sp"
+            />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:id="@+id/login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="로그인"
+            android:background="@drawable/button_back_pinkred"
+            android:textSize="17sp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
+
+</LinearLayout>

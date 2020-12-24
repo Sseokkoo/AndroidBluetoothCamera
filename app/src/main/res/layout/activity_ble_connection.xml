@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#000000">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="착용하고자 하는 장비 전원을 켜고,\n기기를 연결해주세요."
+        android:layout_marginBottom="30dp"
+        android:textColor="#ffffff"
+        android:textSize="17.5sp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/BleConnect"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="기기 연결"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_back_pinkred"
+        android:textSize="17sp"
+        />
+
+    <Button
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/close"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="로그아웃"
+        android:textColor="#9a0d1e"
+        android:background="@drawable/button_back_white_red_stroke"
+        android:layout_marginBottom="15dp"
+        android:textSize="17sp"
+        />
+
+</LinearLayout>

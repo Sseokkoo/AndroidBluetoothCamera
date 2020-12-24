@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+<!--    액션바-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/close"
+        >
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_back_nor"
+            android:layout_gravity="left|center"
+
+            />
+        <TextView
+            android:gravity="left|center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="프로필"
+            android:textSize="17.5sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_gravity="left"
+            android:layout_marginLeft="5dp"
+            />
+    </LinearLayout>
+
+<!--메뉴-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        />
+<!--이메일-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/button_back_black"
+        android:padding="10dp"
+        android:text="email"
+        android:textSize="16dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="5dp"
+        android:id="@+id/edtEmail"
+        android:singleLine="true"
+        />
+
+<!--닉네임-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="닉네임"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/button_back_black"
+            android:padding="10dp"
+            android:text="nickname"
+            android:textSize="16dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="5dp"
+            android:id="@+id/edtNickname"
+            android:singleLine="true"
+            />
+<!--성별-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="성별"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/button_back_black"
+            android:padding="10dp"
+            android:text="gender"
+            android:textSize="16dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="5dp"
+            android:id="@+id/edtGender"
+            android:singleLine="true"
+            />
+<!--키-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="키"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/button_back_black"
+            android:padding="10dp"
+            android:text="height"
+            android:textSize="16dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="5dp"
+            android:id="@+id/edtHeight"
+            android:inputType="number"
+            android:singleLine="true"
+            />
+<!--나이-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="나이"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/button_back_black"
+            android:padding="10dp"
+            android:text="age"
+            android:textSize="16dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="5dp"
+            android:id="@+id/edtAge"
+            android:inputType="number"
+            android:singleLine="true"
+            />
+<!--몸무게-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="몸무게"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/button_back_black"
+            android:padding="10dp"
+            android:text="weight"
+            android:textSize="16dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="5dp"
+            android:id="@+id/edtWeight"
+            android:inputType="number"
+            android:singleLine="true"
+            />
+
+
+        <Button
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="50dp"
+            android:id="@+id/btnSave"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="수정사항 저장"
+            android:background="@drawable/button_back_pinkred"
+            android:textSize="17sp"
+            />
+
+<!--        저장 버튼-->
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

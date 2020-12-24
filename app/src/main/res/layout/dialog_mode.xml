@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="250dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="운동 모드 선택"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:id="@+id/mode_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:textSize="14dp"
+        android:textColor="#000000"
+        android:background="@drawable/btn_muscle_click"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:id="@+id/mode_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:textSize="14dp"
+        android:textColor="#000000"
+        android:background="@drawable/btn_diet_click"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:textSize="14dp"
+        android:textColor="#000000"
+        android:background="@drawable/btn_cancel_click"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+</LinearLayout>

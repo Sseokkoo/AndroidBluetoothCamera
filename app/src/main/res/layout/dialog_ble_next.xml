@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000">
+
+    <TextView
+        android:layout_marginTop="75dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:text="블루투스 연결"
+        android:textSize="17.5sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_back_white_red_stroke_noncorner"
+        android:layout_gravity="left"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        >
+    <TextView
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="#FF0000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="밴드에 연결되지 않은 장비는 동작하지 않을 수 있습니다."
+        />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ConnectList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button_back_white_red_stroke_noncorner"
+        >
+
+    <TextView
+        android:gravity="center"
+        android:textSize="12.5sp"
+        android:textColor="#FF0000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="진행하시겠습니까?"
+        android:layout_margin="5dp"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/Insert"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_end_click"
+            />
+        <Button
+            android:layout_marginTop="5dp"
+            android:id="@+id/close"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_cancel_click"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
